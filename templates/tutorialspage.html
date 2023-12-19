@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}
+  <title>Tutorials</title>
+{% endblock title %}
+{% block body %}
+  <h1>{{tutorials.tutorial_name}}</h1>
+  {% for posts in posts %}
+  
+      <div class="container p-5  h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          
+          <div class="col">
+            <div class="card rounded-3">
+              <div class="card-body p-4">
+    
+                <h4 class="text-center my-3 pb-3">Topics</h4>
+                <table class="table mb-4">
+                  <thead>
+                    <tr>
+                      <th scope="col">No.</th>
+                      <th scope="col">Topic Name</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">{{posts.post_id}}</th>
+                      <td><a href="/posts/{{posts.url}}"><h4 class="text-success fw-bold">{{posts.post_title}}</h4></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  {% endfor %}
+{% endblock body %}
