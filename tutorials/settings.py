@@ -34,9 +34,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'ckeditor',
-    'ckeditor_uploader',
-    'material',
-    'material.admin',
+    
+    
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
