@@ -84,14 +84,12 @@ CKEDITOR_FILENAME_GENERATOR = 'utils.get_filename'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sathyadb1',
-        'USER': 'root',
-        'PASSWORD': 'Sathi7661$',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 # Password validation
